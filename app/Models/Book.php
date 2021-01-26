@@ -35,6 +35,12 @@ class Book extends Model
     |--------------------------------------------------------------------------
     */
 
+    public function autors()
+    {
+        return $this->belongsToMany('App\Models\Autor');
+    }
+
+
     /*
     |--------------------------------------------------------------------------
     | SCOPES

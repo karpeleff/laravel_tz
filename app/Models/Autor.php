@@ -35,6 +35,13 @@ class Autor extends Model
     |--------------------------------------------------------------------------
     */
 
+    public function books()
+    {
+        return $this->belongsToMany('App\Models\Book');
+    }
+
+
+
     /*
     |--------------------------------------------------------------------------
     | SCOPES
